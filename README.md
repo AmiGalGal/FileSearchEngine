@@ -56,7 +56,6 @@ It runs completely offline on your machine — no APIs, no cloud services, and n
 - Semantic search using natural language (not filename or tag based)
 - Images and videos powered by OpenAI CLIP
 - Documents powered by `sentence-transformers` (`all-MiniLM-L6-v2`)
-- Unified results across all three modalities in a single query
 - Returns top-K most relevant results
 - Simple GUI built with Tkinter
 - No external APIs required
