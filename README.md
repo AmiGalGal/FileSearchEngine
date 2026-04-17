@@ -41,7 +41,6 @@ It runs completely offline on your machine — no APIs, no cloud services, and n
 - `.avi`
 - `.mov`
 - `.mkv`
-- `.webm`
 
 **Documents**
 - `.pdf`
