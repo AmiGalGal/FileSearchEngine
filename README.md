@@ -74,15 +74,12 @@ A simple Tkinter GUI allows you to:
 ## 🗂️ How indexing works
 ```
 your-folder/
-    ├── photos/         → CLIP image encoder      → image_index.json
-    ├── videos/         → CLIP image encoder      → video_index.json
-    └── documents/      → all-MiniLM-L6-v2        → doc_index.json
+    ├── ImgSearchEngine/         → CLIP image encoder      → PPlqqUxaMfzL.json
+    ├── VideoSearchEngine/         → CLIP image encoder      → lcLihsJnwlIt.json
+    └── DocSearchEngine/      → all-MiniLM-L6-v2        → ktqdmCptcsXM.json
 ```
-Each modality is indexed and stored separately. You can re-index any modality independently without affecting the others.
 
 ---
 
 ## 📌 Notes
-SeekAll runs three independent search engines under the hood — one per modality — and merges their results at query time. Because CLIP and `all-MiniLM-L6-v2` operate in different vector spaces, scores are normalized within each modality before being combined.
-
 > **Note:** JSON storage works well for small to medium collections. For large libraries, serializing high-dimensional float vectors as plain text is not storage-efficient — migration to a binary format or a dedicated vector store such as ChromaDB is recommended at scale.
