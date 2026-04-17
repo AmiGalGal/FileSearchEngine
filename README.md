@@ -17,7 +17,7 @@ It runs completely offline on your machine — no APIs, no cloud services, and n
 - Per-frame vectors are averaged into a single representative vector per video
 
 **Documents**
-- Documents are split into chunks of 300 words with 50-word overlap
+- Documents are split into chunks of 250 words
 - Each chunk is encoded into a 384-dimensional vector using `all-MiniLM-L6-v2`
 - The most relevant chunk per document is used for ranking
 
